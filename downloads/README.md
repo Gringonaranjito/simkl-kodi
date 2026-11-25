@@ -1,0 +1,1 @@
+Private staging only. Android ARM64 Elementum tested on phone and tablet; Windows x64 and Android ARM32 ports not runtime tested. Full kits must be extracted, not installed as one Kodi ZIP. No Elementum in common update feed. Review licenses and credentials before public release.
