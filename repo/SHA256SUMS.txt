@@ -1,0 +1,5 @@
+b872f9997916534e9d87fd4f8622843134be29d4e25db29a6362f6da83fad220  plugin.video.simkl/plugin.video.simkl-0.9.29.zip
+2831a7bd6c8ad848df76078d1a8fbcc3f0d0c1dd0d3715df5971c14ec1284293  context.simkl/context.simkl-1.0.35.zip
+c974b50eb9fc41c0ec6d9bd47449c14cac9e79ff30d14d827aaa5191b55f63b5  repository.simkl.kodi/repository.simkl.kodi-1.0.0.zip
+c7f4d26a787d1d36a6bd91074858188845dc8ccdcfc06a8da679ab4c509ad940  addons.xml
+805e9ca7eda3eb10a0ae3d3483e6cd60687d7d1e5d12b227a974c762d3b7d7c1  addons.xml.md5

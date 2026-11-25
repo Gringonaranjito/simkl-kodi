@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons>
+  <addon id="plugin.video.simkl" name="Simkl" provider-name="TeamOtaku" version="0.9.29">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1" />
+      <import addon="script.module.beautifulsoup4" />
+      <import addon="script.module.inputstreamhelper" />
+      <import addon="script.module.pyqrcode" />
+      <import addon="plugin.video.elementum" version="0.1.0" optional="true" />
+      <import addon="script.elementum.burst" version="0.0.1" optional="true" />
+      <import addon="context.simkl" version="1.0.34" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+      <reuselanguageinvoker>false</reuselanguageinvoker>
+      <summary lang="en">Simkl — Otaku-based test fork</summary>
+      <description lang="en">Simkl is an experimental GPL fork of Otaku, with Simkl watchlists, manual watch-history updates, and anime playback. Original code by SwagOtaku and Otaku contributors. Movie and TV playback is under development. Includes provider discovery and public-domain film search. No media is hosted by this add-on.</description>
+      <platform>all</platform>
+      <disclaimer>Otaku is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.[CR]This addon and its developers [B]DO NOT[/B] host, create, or distribute any of the content displayed in the addon, it simply scrapes ad financed public websites. It is the responsibility of the user to ensure that they are following all applicable laws and regulations in their country.[CR]This addon and its developers are not in any way affiliated with Team Kodi or any of the sites and providers used in the addon.</disclaimer>
+      <license>GPL-3.0</license>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <clearlogo>logo.png</clearlogo>
+        <poster>poster.png</poster>
+        <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+        <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+      </assets>
+    </extension>
+  </addon>
+  <addon id="context.simkl" version="1.0.35" name="Simkl - Context Menu" provider-name="TeamOtaku">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="kodi.context.item">
+      <menu id="kodi.core.main">
+        <item library="default.py" args="findrecommendations">
+          <label>Find Recommendations</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.findrecommendations),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="findrelations">
+          <label>Find Relations</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.findrelations),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="getwatchorder">
+          <label>Get Watch Order</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.getwatchorder),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="viewreviews">
+          <label>View Reviews</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.viewreviews),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="viewstatistics">
+          <label>View Statistics</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.viewstatistics),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="markedaswatched">
+          <label>Marked as Watched [COLOR blue]WatchList[/COLOR]</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.markedaswatched),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,movie)] + !Player.HasMedia</visible>
+        </item>
+        <item library="default.py" args="rescrape">
+          <label>Rescrape</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.rescrape),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,episode)|String.IsEqual(ListItem.DBTYPE,movie)] + !Player.HasMedia</visible>
+        </item>
+        <item library="default.py" args="sourceselect">
+          <label>Source Select</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.sourceselect),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,episode)|String.IsEqual(ListItem.DBTYPE,movie)] + !Player.HasMedia</visible>
+        </item>
+        <item library="default.py" args="logout">
+          <label>Logout</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.logout),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + String.Contains(ListItem.folderpath,/watchlist/)</visible>
+        </item>
+        <item library="default.py" args="deletefromdatabase">
+          <label>Delete From Database</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.deletefromdatabase),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="watchlist">
+          <label>WatchList Manager</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.watchlist),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/) + [String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+        <item library="default.py" args="fanartselect">
+          <label>Select Fanart</label>
+          <visible>String.IsEqual(Window(home).Property(context.simkl.fanartselect),true) + String.StartsWith(ListItem.Path,plugin://plugin.video.simkl/)+[String.IsEqual(ListItem.DBTYPE,tvshow)|String.IsEqual(ListItem.DBTYPE,movie)]</visible>
+        </item>
+      </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Otaku - Global Context Menu Items</summary>
+      <description lang="en">Adds Global Contextual Menu Items for otaku menu items throughout Kodi
+    </description>
+      <platform>all</platform>
+      <license>GPL-3.0</license>
+      <forum />
+      <website />
+      <source />
+      <disclaimer lang="en" />
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <clearlogo>logo.png</clearlogo>
+        <poster>poster.png</poster>
+      </assets>
+    </extension>
+  </addon>
+  <addon id="repository.simkl.kodi" name="Simkl Kodi Repository" version="1.0.0" provider-name="Gringonaranjito">
+    <extension point="xbmc.addon.repository" name="Simkl Kodi Repository">
+      <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gringonaranjito/simkl-kodi/main/repo/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gringonaranjito/simkl-kodi/main/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gringonaranjito/simkl-kodi/main/repo/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Simkl updates</summary>
+      <description lang="en_GB">Platform-independent Simkl and Context Menu updates. Elementum is installed separately.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+</addons>
