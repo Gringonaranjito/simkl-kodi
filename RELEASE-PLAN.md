@@ -14,3 +14,9 @@ Status: private staging; no live Kodi update feed yet.
 - Preserve userdata and account authorization; never commit Kodi backups, logs or personal settings.
 - Retain original licenses and attribution. Review upstream application credentials and redistribution terms before public hosting.
 - Test the feed and installation on a spare Kodi profile before enabling automatic updates on the working S21.
+
+## Platform staging v3
+- Android ARM64: owner confirms Elementum works on phone and tablet; S21 Simkl playback and restart passed.
+- Windows x64: port built, runtime untested; leave existing working PC installation unchanged.
+- Android ARM32: port built, runtime untested; verify Firestick Kodi architecture first.
+- Full offline kits and separate Elementum ZIPs are staged for all three platforms. Binary upload pending; no active update feed yet.
