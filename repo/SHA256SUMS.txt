@@ -2,5 +2,9 @@ b872f9997916534e9d87fd4f8622843134be29d4e25db29a6362f6da83fad220  plugin.video.s
 2831a7bd6c8ad848df76078d1a8fbcc3f0d0c1dd0d3715df5971c14ec1284293  context.simkl/context.simkl-1.0.35.zip
 c974b50eb9fc41c0ec6d9bd47449c14cac9e79ff30d14d827aaa5191b55f63b5  repository.simkl.kodi/repository.simkl.kodi-1.0.0.zip
 056c3e900e364e9f4cef3625a3e90412ce5fc2c2fcad58efa779cf7f19f40628  plugin.video.simkl/plugin.video.simkl-0.9.31.zip
-10d2ac70648077c22af5812c881a35049ec6623bd4649319d90aa813d7888dfe  addons.xml
-e414fe019688be3ae0f2f0ecdb6ea60668d95bbfdcc1af0ed5872eb8b55df077  addons.xml.md5
+57d3d53f263311b8ce6335f6e12bb69a4a2394c0975c897f09b08a4acded6e0d  plugin.video.simkl/plugin.video.simkl-0.9.38.zip
+4a28932ab46c007c49f3beab2addcd6eb73518fbac016c85d582c955b27e314a  context.simkl/context.simkl-1.0.36.zip
+68c37a067a3123e18d14465f6f822a38e54157761bf51c1af06d4dd1931d4d3c  plugin.video.elementum/plugin.video.elementum-0.1.119.3.zip
+800bf4f85c7cebb79580340f81b50ed495c9925d3f6688a383cf3dd4bbdb886e  script.elementum.burst/script.elementum.burst-0.0.102.zip
+fc9209258d7231de4d8cfd3d909642623ddb5bd559dbb9b432d94db36191fc4f  addons.xml
+80e59d356890ce1c99ece88d6f7c94958f24ec58dafb58afd194e03b23f52fe0  addons.xml.md5
