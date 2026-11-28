@@ -9,5 +9,6 @@ c974b50eb9fc41c0ec6d9bd47449c14cac9e79ff30d14d827aaa5191b55f63b5  repository.sim
 94231bc3b816676735dad590f91279d889d43e5c0b28cbeb3ee0cb471e6cd4d9  plugin.video.simkl/plugin.video.simkl-0.9.39.zip
 0ccd6ed7153e8cb7db8cd45921b6fe6cd5adece903e67ce7448a58abb56a53c2  plugin.video.simkl/plugin.video.simkl-0.9.53.zip
 39601b2c7b6b5cbbf97d52e162c86abf32c775e079b19b96a6ab24afe1e29a86  plugin.video.simkl/plugin.video.simkl-0.9.54.zip
-ab65a31489c02f74e2a6ed0f77b2764ba76119912cbd7247a4cf3f301af5f6ad  addons.xml
-0b2a61a0be178306f37f8bcf4ab7e13fed547fbf44c823a36c8ab9c3b280caa9  addons.xml.md5
+91ce74446930608b1061624ecd94e792b7e3519db81241ac01b023740e085710  context.simkl/context.simkl-1.0.37.zip
+762285a6893100895658f223dad7c01dcb62b228a2ef88665ed2457a3dd79e5e  addons.xml
+332cfb39dc42aebcfba1dfcd7b8b7345dcbe37069d30386ef3254a408303612a  addons.xml.md5
