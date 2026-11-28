@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <addons>
   <addon id="repository.simkl.kodi" name="Simkl Kodi Repository" version="1.0.0" provider-name="Gringonaranjito">
     <extension point="xbmc.addon.repository" name="Simkl Kodi Repository">
@@ -14,7 +14,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.simkl" name="Simkl" provider-name="TeamOtaku" version="0.9.39">
+  <addon id="plugin.video.simkl" name="Simkl" provider-name="TeamOtaku" version="0.9.53">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
       <import addon="script.module.beautifulsoup4" />
@@ -30,7 +30,7 @@
     <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
       <reuselanguageinvoker>false</reuselanguageinvoker>
-      <summary lang="en">Simkl — Otaku-based test fork</summary>
+      <summary lang="en">Simkl â€” Otaku-based test fork</summary>
       <description lang="en">Simkl is an experimental GPL fork of Otaku, with Simkl watchlists, manual watch-history updates, and anime playback. Original code by SwagOtaku and Otaku contributors. Movie and TV playback is under development. Includes provider discovery and public-domain film search. No media is hosted by this add-on.</description>
       <platform>all</platform>
       <disclaimer>Otaku is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.[CR]This addon and its developers [B]DO NOT[/B] host, create, or distribute any of the content displayed in the addon, it simply scrapes ad financed public websites. It is the responsibility of the user to ensure that they are following all applicable laws and regulations in their country.[CR]This addon and its developers are not in any way affiliated with Team Kodi or any of the sites and providers used in the addon.</disclaimer>
@@ -134,21 +134,21 @@
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.subtitle.module" library="navigation.py" />
     <extension point="xbmc.addon.metadata">
-      <summary lang="ru">Elementum: Стриминг видео</summary>
+      <summary lang="ru">Elementum: Ð¡Ñ‚Ñ€Ð¸Ð¼Ð¸Ð½Ð³ Ð²Ð¸Ð´ÐµÐ¾</summary>
       <summary lang="en">Elementum: Media streaming</summary>
       <summary lang="hr">Elementum: Medijsko strujanje</summary>
-      <summary lang="es">Elementum: Transmisión de medios</summary>
-      <summary lang="sv">Elementum: medieströmning</summary>
-      <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+      <summary lang="es">Elementum: TransmisiÃ³n de medios</summary>
+      <summary lang="sv">Elementum: mediestrÃ¶mning</summary>
+      <description lang="ru">Elementum ÑÑ‚Ð¾ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¸ Ð²Ð¾ÑÐ¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ñ€Ñ€ÐµÐ½Ñ‚Ð¾Ð². Ð”Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð½Ðµ Ñ…Ð¾Ð´Ð¸Ñ‚ Ð½Ð° Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½Ð½Ñ‹Ðµ ÑÐ°Ð¹Ñ‚Ñ‹ ÑÐ°Ð¼Ð¾ÑÑ‚Ð¾ÑÑ‚ÐµÐ»ÑŒÐ½Ð¾. Ð¥Ð¾Ñ‚Ñ, Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ (Ð½Ð°Ð·Ñ‹Ð²Ð°ÐµÐ¼Ñ‹Ðµ Ð¿Ñ€Ð¾Ð²Ð°Ð¹Ð´ÐµÑ€Ð°Ð¼Ð¸), ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÑŽÑ‚ÑÑ Ð¾Ñ‚Ð´ÐµÐ»ÑŒÐ½Ð¾.[CR]Ð­Ñ‚Ð¾Ñ‚ Ð¿Ñ€Ð¾ÐµÐºÑ‚ ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð¾Ñ‚Ð²ÐµÑ‚Ð²Ð»ÐµÐ½Ð¸ÐµÐ¼ Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾ Ð¸Ð·Ð²ÐµÑÐ½Ñ‹Ñ…, Ð½Ð¾ Ð½Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ñ… Pulsar/Quasar Ð¾Ñ‚ steeve Ð¸ scakemyer.</description>
       <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-      <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-      <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-      <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
-      <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+      <description lang="hr">Elementum je pogon pretraÅ¾ivanja i strujanja. Ne posjeÄ‡uje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pruÅ¾atelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali viÅ¡e ne odrÅ¾avanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+      <description lang="es">Elementum es un motor de bÃºsqueda y transmisiÃ³n torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseÃ±ados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+      <description lang="sv">Elementum Ã¤r en torrentsÃ¶knings- och strÃ¶mningsmotor. Det gÃ¥r inte till torrentwebbplatser av juridiska skÃ¤l. Den anropar dock speciellt utformade tillÃ¤gg (kallade leverantÃ¶rer) som installeras separat.[CR]Detta projekt Ã¤r en fÃ¶rgrening av de vÃ¤lkÃ¤nda, men inte lÃ¤ngre underhÃ¥llna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+      <disclaimer lang="ru">ÐÐ²Ñ‚Ð¾Ñ€ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð½Ðµ Ð½ÐµÑÑ‘Ñ‚ Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ Ð·Ð° ÑÐºÐ°Ñ‡Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð»Ð¸ Ð¿Ð¾Ð¸ÑÐº Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¸ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ð³Ð¾ Ð² ÑÑ‚Ð¾Ð¼ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ð¸. ÐÐ²Ñ‚Ð¾Ñ€ Ð½Ð¸ÐºÐ°Ðº Ð½Ðµ ÑÐ²ÑÐ·Ð°Ð½ Ñ Kodi, ÐºÐ¾Ð¼Ð°Ð½Ð´Ð¾Ð¹ Kodi, Ð¸Ð»Ð¸ XBMC Foundation.</disclaimer>
       <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-      <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-      <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-      <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+      <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadrÅ¾aj koji je pronaÄ‘en. Autor nije povezan sa ili na bilo koji drugi naÄin bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+      <disclaimer lang="es">El autor no posee ni aloja ningÃºn contenido que se encuentre a travÃ©s de este complemento. El autor no estÃ¡ unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+      <disclaimer lang="sv">Skaparen Ã¤ger inte eller Ã¤r vÃ¤rd av nÃ¥got innehÃ¥ll som finns i detta tillÃ¤gg. FÃ¶rfattaren Ã¤r inte ansluten till eller pÃ¥ nÃ¥got annat sÃ¤tt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
       <language>en el es de fi fr he hr it nl pt ro sk sv</language>
       <platform>all</platform>
       <website>http://elementum.surge.sh/</website>
@@ -176,20 +176,20 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en">Elementum torrents provider</summary>
-      <summary lang="hr">Elementum torrent pružatelji usluga</summary>
+      <summary lang="hr">Elementum torrent pruÅ¾atelji usluga</summary>
       <summary lang="es">Proveedor de torrents Elementum</summary>
-      <summary lang="ru">Поисковое дополнение Elementum</summary>
-      <summary lang="sv">Elementum-torrentleverantör</summary>
+      <summary lang="ru">ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ð¾Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Elementum</summary>
+      <summary lang="sv">Elementum-torrentleverantÃ¶r</summary>
       <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
-      <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
+      <description lang="hr">Elementum Burst je viÅ¡estruki pruÅ¾atelj usluga za Elementum.</description>
       <description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
-      <description lang="ru">Elementum Burst это поисковое дополнение, для поиска торрентов для Elementum.</description>
-      <description lang="sv">Elementum Burst är en enkel och effektiv multi-leverantör för Elementum.</description>
+      <description lang="ru">Elementum Burst ÑÑ‚Ð¾ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ, Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ñ‚Ð¾Ñ€Ñ€ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð»Ñ Elementum.</description>
+      <description lang="sv">Elementum Burst Ã¤r en enkel och effektiv multi-leverantÃ¶r fÃ¶r Elementum.</description>
       <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-      <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
-      <disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>
-      <disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
-      <disclaimer lang="sv">Skaparen är inte värd eller distribuerar något av innehållet som visas av detta tillägg. Skaparen har ingen anslutning till innehållsleverantörerna.</disclaimer>
+      <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadrÅ¾aj koji je pronaÄ‘en. Autor nije povezan sa bilo kojim izvorom sadrÅ¾aja.</disclaimer>
+      <disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliaciÃ³n con los proveedores de contenido.</disclaimer>
+      <disclaimer lang="ru">ÐÐ²Ñ‚Ð¾Ñ€ Ð½Ðµ Ð½ÐµÑÑ‘Ñ‚ Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ Ð·Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ, Ð½Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ðµ, Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸ÐµÐ¼.</disclaimer>
+      <disclaimer lang="sv">Skaparen Ã¤r inte vÃ¤rd eller distribuerar nÃ¥got av innehÃ¥llet som visas av detta tillÃ¤gg. Skaparen har ingen anslutning till innehÃ¥llsleverantÃ¶rerna.</disclaimer>
       <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
       <website>https://elementum.surge.sh</website>
       <source>https://github.com/elgatito/script.elementum.burst</source>

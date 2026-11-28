@@ -7,5 +7,6 @@ c974b50eb9fc41c0ec6d9bd47449c14cac9e79ff30d14d827aaa5191b55f63b5  repository.sim
 68c37a067a3123e18d14465f6f822a38e54157761bf51c1af06d4dd1931d4d3c  plugin.video.elementum/plugin.video.elementum-0.1.119.3.zip
 800bf4f85c7cebb79580340f81b50ed495c9925d3f6688a383cf3dd4bbdb886e  script.elementum.burst/script.elementum.burst-0.0.102.zip
 94231bc3b816676735dad590f91279d889d43e5c0b28cbeb3ee0cb471e6cd4d9  plugin.video.simkl/plugin.video.simkl-0.9.39.zip
-c65f68510624d82e7b220b775c915f1ef0cb1a2a75cb328ee620600d1fbf40a4  addons.xml
-17d6c0a0e64604bca7d3c8ec1094ec1ec029a768dadeab9fbdfe8f9752cf2bb1  addons.xml.md5
+0ccd6ed7153e8cb7db8cd45921b6fe6cd5adece903e67ce7448a58abb56a53c2  plugin.video.simkl/plugin.video.simkl-0.9.53.zip
+626bfd5d2add02263e4b1ca0f1e76e8fa1262ceafa658d9c7175cd4fc06b74d0  addons.xml
+65bb1af6a5d352abfba6cc48b2943da7a6ecc3e936e71ae986cdad22c91679a3  addons.xml.md5
